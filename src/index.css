@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+@import '@fontsource/ibm-plex-sans/latin-400.css';
+@import '@fontsource/ibm-plex-sans/latin-500.css';
+@import '@fontsource/ibm-plex-sans/latin-600.css';
+@import '@fontsource/ibm-plex-sans/latin-ext-400.css';
+@import '@fontsource/ibm-plex-sans/latin-ext-500.css';
+@import '@fontsource/ibm-plex-sans/latin-ext-600.css';
+@import '@fontsource/ibm-plex-mono/latin-400.css';
+@import '@fontsource/ibm-plex-mono/latin-500.css';
+@import '@fontsource/ibm-plex-mono/latin-ext-400.css';
+@import '@fontsource/ibm-plex-mono/latin-ext-500.css';
+
+@theme {
+  /* Palette : ardoise-encre, papier froid, accent sarcelle (IT / technique) */
+  --color-ink-950: #0f1626;
+  --color-ink-900: #141d33;
+  --color-ink-800: #1c2740;
+  --color-ink-700: #27334f;
+  --color-ink-600: #3a4867;
+  --color-ink-500: #5b6a8c;
+  --color-ink-400: #8591ac;
+
+  --color-paper-50: #f7f7f5;
+  --color-paper-100: #eef0f0;
+  --color-paper-200: #dfe3e3;
+  --color-paper-300: #cdd2d3;
+
+  --color-teal-700: #205a56;
+  --color-teal-600: #2f6f6b;
+  --color-teal-500: #3e8781;
+  --color-teal-100: #e1edec;
+  --color-teal-50: #eef4f3;
+
+  --color-amber-700: #8a5a12;
+  --color-amber-600: #b3791d;
+  --color-amber-100: #fbf0dc;
+
+  --color-orange-700: #923d10;
+  --color-orange-600: #b5531a;
+  --color-orange-100: #fbe8dc;
+
+  --color-blue-700: #244e6c;
+  --color-blue-600: #2f6f99;
+  --color-blue-100: #e3eef5;
+
+  --color-green-700: #205c3b;
+  --color-green-600: #2e7d4f;
+  --color-green-100: #e2f3e7;
+
+  --color-red-700: #8a2b2b;
+  --color-red-600: #b23b3b;
+  --color-red-100: #fbe4e4;
+
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--color-teal-100);
+  color: var(--color-teal-700);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal-500);
+  outline-offset: 2px;
+}
+
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
